@@ -66,6 +66,15 @@
                     default=""
                 />
                 <field
+                    name="height"
+                    type="text"
+                    label="MOD_MAP_MAP_HEIGHT_LABEL"
+                    description="MOD_MAP_MAP_HEIGHT_DESC"
+                    size="40"
+                    default="500"
+                    filter="int"
+                />
+                <field
                     name="manual_markers"
                     type="textarea"
                     label="MOD_MAP_MAP_MANUAL_MARKERS_LABEL"
