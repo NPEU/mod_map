@@ -34,8 +34,8 @@
                 <field
                     name="lat"
                     type="text"
-                    label="MOD_MAP_MAP_LAT_LABEL"
-                    description="MOD_MAP_MAP_LAT_DESC"
+                    label="MOD_MAP_LAT_LABEL"
+                    description="MOD_MAP_LAT_DESC"
                     size="40"
                     default=""
                     filter="float"
@@ -43,8 +43,8 @@
                 <field
                     name="lng"
                     type="text"
-                    label="MOD_MAP_MAP_LNG_LABEL"
-                    description="MOD_MAP_MAP_LNG_DESC"
+                    label="MOD_MAP_LNG_LABEL"
+                    description="MOD_MAP_LNG_DESC"
                     size="40"
                     default=""
                     filter="float"
@@ -52,8 +52,8 @@
                 <field
                     name="zoom"
                     type="text"
-                    label="MOD_MAP_MAP_ZOOM_LABEL"
-                    description="MOD_MAP_MAP_ZOOM_DESC"
+                    label="MOD_MAP_ZOOM_LABEL"
+                    description="MOD_MAP_ZOOM_DESC"
                     size="40"
                     default=""
                     filter="int"
@@ -61,27 +61,73 @@
                 <field
                     name="access_token"
                     type="text"
-                    label="MOD_MAP_MAP_ACCESS_TOKEN_LABEL"
-                    description="MOD_MAP_MAP_ACCESS_TOKEN_DESC"
+                    label="MOD_MAP_ACCESS_TOKEN_LABEL"
+                    description="MOD_MAP_ACCESS_TOKEN_DESC"
                     default=""
                 />
                 <field
                     name="height"
                     type="text"
-                    label="MOD_MAP_MAP_HEIGHT_LABEL"
-                    description="MOD_MAP_MAP_HEIGHT_DESC"
+                    label="MOD_MAP_HEIGHT_LABEL"
+                    description="MOD_MAP_HEIGHT_DESC"
                     size="40"
                     default="500"
                     filter="int"
                 />
+            </fieldset>
+            <fieldset
+                name="markers"
+                label="MOD_MAP_MARKERS_FIELDSET_LABEL"
+                description="MOD_MAP_MARKERS_FIELDSET_DESC"
+            >
                 <field
                     name="manual_markers"
                     type="textarea"
-                    label="MOD_MAP_MAP_MANUAL_MARKERS_LABEL"
-                    description="MOD_MAP_MAP_MANUAL_MARKERS_DESC"
+                    class="monospace"
+                    label="MOD_MAP_MARKERS_MANUAL_LABEL"
+                    description="MOD_MAP_MARKERS_MANUAL_DESC"
                     default=""
                     rows="10"
                     filter="raw"
+                />
+                <field
+                    name="remote_markers_url"
+                    type="url"
+                    label="MOD_MAP_MARKERS_REMOTE_URL_LABEL"
+                    description="MOD_MAP_MARKERS_REMOTE_URL_DESC"
+                    default=""
+                />
+                <field
+                    name="remote_markers_json_format"
+                    type="textarea"
+                    class="monospace"
+                    rows="5"
+                    cols="30"
+                    label="MOD_MAP_MARKERS_REMOTE_JSON_FORMAT_LABEL"
+                    description="MOD_MAP_MARKERS_REMOTE_JSON_FORMAT_DESC"
+                    filter="raw"
+                />
+            </fieldset>
+            <fieldset
+                name="static_map"
+                label="MOD_MAP_STATIC_FIELDSET_LABEL"
+                description="MOD_MAP_STATIC_FIELDSET_DESC"
+            >
+                <field
+                    name="static_map_alt"
+                    type="text"
+                    label="MOD_MAP_STATIC_ALT_LABEL"
+                    description="MOD_MAP_STATIC_ALT_DESC"
+                    size="40"
+                    default=""
+                />
+                <field
+                    name="static_map_no_js"
+                    type="text"
+                    label="MOD_MAP_STATIC_NO_JS_LABEL"
+                    description="MOD_MAP_STATIC_NO_JS_DESC"
+                    size="40"
+                    default="No javascript available, can't display an interactive map."
                 />
             </fieldset>
         </fields>
