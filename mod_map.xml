@@ -26,6 +26,7 @@
         <folder>assets</folder>
         <folder>language</folder>
         <folder>tmpl</folder>
+        <folder>vendor</folder>
     </files>
 
     <config>
