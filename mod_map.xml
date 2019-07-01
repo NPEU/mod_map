@@ -75,6 +75,15 @@
                     default="500"
                     filter="int"
                 />
+                <field
+                    name="legend"
+                    type="editor"
+                    label="MOD_MAP_LEGEND_LABEL"
+                    description="MOD_MAP_LEGEND_DESC"
+                    default=""
+                    buttons="false"
+                    filter="safehtml"
+                />
             </fieldset>
             <fieldset
                 name="markers"

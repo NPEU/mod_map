@@ -21,6 +21,7 @@ $lng    = $params->get('lng');
 $zoom   = $params->get('zoom');
 $token  = $params->get('access_token');
 $height = $params->get('height');
+$legend = $params->get('legend');
 
 // Add Leaflet assets:
 $doc->addStyleSheet($module_path . '/assets/leaflet/leaflet.css');
@@ -109,6 +110,11 @@ $static_map_src   = 'https://api.mapbox.com/styles/v1/mapbox/streets-v10/static/
     </p>
     <?php endif; ?>
 </div>
+<?php if (!empty($legend)): ?>
+<div>
+    <?php echo $legend; ?>
+</div>
+<?php endif; ?>
 <script>
 leafletMapInitialize('<?php echo $map_id; ?>', <?php echo json_encode($map_data); ?>, <?php echo $markers_json; ?>);
 </script>
