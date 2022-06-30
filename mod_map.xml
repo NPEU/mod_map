@@ -82,7 +82,7 @@
                     description="MOD_MAP_LEGEND_DESC"
                     default=""
                     buttons="false"
-                    filter="safehtml"
+                    filter="JComponentHelper::filterText"
                 />
             </fieldset>
             <fieldset
