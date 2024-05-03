@@ -22,7 +22,7 @@
     <namespace path="src">NPEU\Module\Map</namespace>
 
     <files>
-        <filename module="mod_map">services</filename>
+        <folder module="mod_map">services</folder>
         <folder>assets</folder>
         <folder>language</folder>
         <folder>src</folder>
